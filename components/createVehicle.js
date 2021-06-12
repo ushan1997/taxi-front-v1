@@ -46,7 +46,7 @@ class createVehicle extends Component {
     }
 
     onSubmit(event){
-        //event.preventDefault();
+        event.preventDefault();
         let vehicle = {
             name :this.state.name,
             code :this.state.code,

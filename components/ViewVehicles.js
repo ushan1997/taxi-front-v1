@@ -17,6 +17,19 @@ class ViewVehicles extends Component {
                 alert(err.message);
             })
     }
+    navigateUpdate(event,id){
+        event.preventDefault();
+        window.location = `/vehicle/navigateUpdate/${id}`
+    }
+    navigateDelete(event,id){
+        axios.delete(`http://localhost:8080/vehicles/deleteById/${id}`)
+        .then(response =>{
+            alert("Data deleted successfully")
+            window.location = `/vehicles`
+        }).catch(error =>{
+            console.log(error);
+        })
+    }
     
     render() {
         return (
@@ -29,6 +42,8 @@ class ViewVehicles extends Component {
                             <h5>Code :{value.code}</h5>
                             <h5>Model :{value.model}</h5>
                             <h5>Type :{value.type}</h5>
+                            <button className="btn btn-warning" onClick={event =>this.navigateUpdate(event,value._id)}>Update Vehicle</button>
+                            <button className="btn btn-danger" onClick={event =>this.navigateDelete(event,value._id)}>Delete Vehicle</button>
                         </div>
                     </div>
                 ))}

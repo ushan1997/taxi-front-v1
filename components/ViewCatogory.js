@@ -17,6 +17,7 @@ class ViewCatogory extends Component {
         })
     }
     onClickNavCatogory(event,id){
+        event.preventDefault();
         window.location = `/incatagory/${id}`
     }
     render() {

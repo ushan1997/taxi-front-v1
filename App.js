@@ -7,6 +7,7 @@ import vehicles from './components/ViewVehicles';
 import catagory from './components/ViewCatogory';
 import viewVehicleInfo from './components/viewVehiclesInfo';
 import calcTripCharge from './components/calcTripCharge';
+import updateVehicle from './components/updateVehicle';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                         <Route path="/vehicles" component={vehicles}/>
                         <Route path="/catagory" component={catagory}/>
                         <Route path="/incatagory/:id" component={viewVehicleInfo}/>
+                        <Route path="/vehicle/navigateUpdate/:id" component={updateVehicle}/>
                     </Switch>
                 </section>
             </Router>

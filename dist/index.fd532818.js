@@ -865,27 +865,23 @@ var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactDom = require("react-dom");
-var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
-var _app = require("./App");
-var _appDefault = parcelHelpers.interopDefault(_app);
-_reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(_appDefault.default, {
-    __source: {
-        fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\index.js",
-        lineNumber: 5
-    },
-    __self: undefined
-}), document.getElementById('root'));
+"use strict";
+var _react = _interopRequireDefault(require("react"));
+var _reactDom = _interopRequireDefault(require("react-dom"));
+var _App = _interopRequireDefault(require("./App"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+_reactDom["default"].render(/*#__PURE__*/ _react["default"].createElement(_App["default"], null), document.getElementById('root'));
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-dom":"2sg1U","./App":"5Du1s","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
+},{"react":"3b2NM","react-dom":"2sg1U","./App":"5Du1s","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react.development.js');
 
@@ -21841,109 +21837,54 @@ var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireDefault(require("react"));
 var _reactRouterDom = require("react-router-dom");
-var _header = require("./components/header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _createCatogory = require("./components/createCatogory");
-var _createCatogoryDefault = parcelHelpers.interopDefault(_createCatogory);
-var _createVehicle = require("./components/createVehicle");
-var _createVehicleDefault = parcelHelpers.interopDefault(_createVehicle);
-var _viewVehicles = require("./components/ViewVehicles");
-var _viewVehiclesDefault = parcelHelpers.interopDefault(_viewVehicles);
-var _viewCatogory = require("./components/ViewCatogory");
-var _viewCatogoryDefault = parcelHelpers.interopDefault(_viewCatogory);
-var _viewVehiclesInfo = require("./components/viewVehiclesInfo");
-var _viewVehiclesInfoDefault = parcelHelpers.interopDefault(_viewVehiclesInfo);
-var _calcTripCharge = require("./components/calcTripCharge");
-var _calcTripChargeDefault = parcelHelpers.interopDefault(_calcTripCharge);
-const App = ()=>{
-    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 13
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 14
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_headerDefault.default, {
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 15
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("section", {
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 16
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 17
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+var _header = _interopRequireDefault(require("./components/header"));
+var _createCatogory = _interopRequireDefault(require("./components/createCatogory"));
+var _createVehicle = _interopRequireDefault(require("./components/createVehicle"));
+var _ViewVehicles = _interopRequireDefault(require("./components/ViewVehicles"));
+var _ViewCatogory = _interopRequireDefault(require("./components/ViewCatogory"));
+var _viewVehiclesInfo = _interopRequireDefault(require("./components/viewVehiclesInfo"));
+var _calcTripCharge = _interopRequireDefault(require("./components/calcTripCharge"));
+var _updateVehicle = _interopRequireDefault(require("./components/updateVehicle"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+var App = function App1() {
+    return(/*#__PURE__*/ _react["default"].createElement("div", null, /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/ _react["default"].createElement(_header["default"], null), /*#__PURE__*/ _react["default"].createElement("section", null, /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Switch, null, /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/",
-        component: _calcTripChargeDefault.default,
-        exact: true,
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 18
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        component: _calcTripCharge["default"],
+        exact: true
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/create-catogory",
-        component: _createCatogoryDefault.default,
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 19
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        component: _createCatogory["default"]
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/create-vehicle",
-        component: _createVehicleDefault.default,
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 20
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        component: _createVehicle["default"]
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/vehicles",
-        component: _viewVehiclesDefault.default,
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 21
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        component: _ViewVehicles["default"]
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/catagory",
-        component: _viewCatogoryDefault.default,
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 22
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        component: _ViewCatogory["default"]
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/incatagory/:id",
-        component: _viewVehiclesInfoDefault.default,
-        __source: {
-            fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\App.js",
-            lineNumber: 23
-        },
-        __self: undefined
+        component: _viewVehiclesInfo["default"]
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
+        path: "/vehicle/navigateUpdate/:id",
+        component: _updateVehicle["default"]
     }))))));
 };
 _c = App;
-exports.default = App;
+var _default = App;
+exports["default"] = _default;
 var _c;
 $RefreshReg$(_c, "App");
 
@@ -21952,7 +21893,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/header":"72GXj","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/createCatogory":"4DeDK","./components/createVehicle":"1V43u","./components/ViewVehicles":"2oeTh","./components/ViewCatogory":"4ugNY","./components/viewVehiclesInfo":"4baxH","./components/calcTripCharge":"6FJzx"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/header":"72GXj","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/createCatogory":"4DeDK","./components/createVehicle":"1V43u","./components/ViewVehicles":"2oeTh","./components/ViewCatogory":"4ugNY","./components/viewVehiclesInfo":"4baxH","./components/calcTripCharge":"6FJzx","./components/updateVehicle":"5FmFR"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25038,197 +24979,194 @@ var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class header extends _react.Component {
-    constructor(props){
-        super(props);
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
     }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 10
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
-            className: "navbar navbar-expand-lg navbar-dark bg-dark",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 11
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container-fluid",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 12
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "navbar-brand",
-            href: "#",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 13
-            },
-            __self: this
-        }, "AF Taxi Service"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            className: "navbar-toggler",
-            type: "button",
-            "data-bs-toggle": "collapse",
-            "data-bs-target": "#navbarNav",
-            "aria-controls": "navbarNav",
-            "aria-expanded": "false",
-            "aria-label": "Toggle navigation",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 14
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            className: "navbar-toggler-icon",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 16
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "collapse navbar-collapse",
-            id: "navbarNav",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 18
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
-            className: "navbar-nav",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 19
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 20
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link active",
-            "aria-current": "page",
-            href: "/",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 21
-            },
-            __self: this
-        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 23
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link",
-            href: "/create-vehicle",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 24
-            },
-            __self: this
-        }, "Create Vehicle")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 26
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link",
-            href: "/create-catogory",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 27
-            },
-            __self: this
-        }, "Create Category")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 29
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link",
-            href: "/vehicles",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 30
-            },
-            __self: this
-        }, "Vehicles")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-            className: "nav-item",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 32
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            className: "nav-link",
-            href: "/catagory",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\header.js",
-                lineNumber: 33
-            },
-            __self: this
-        }, "Category"))))))));
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
     }
 }
-exports.default = header;
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var header1 = /*#__PURE__*/ function(_Component) {
+    _inherits(header2, _Component);
+    var _super = _createSuper(header2);
+    function header2(props) {
+        _classCallCheck(this, header2);
+        return _super.call(this, props);
+    }
+    _createClass(header2, [
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", null, /*#__PURE__*/ _react["default"].createElement("nav", {
+                    className: "navbar navbar-expand-lg navbar-dark bg-dark"
+                }, /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container-fluid"
+                }, /*#__PURE__*/ _react["default"].createElement("a", {
+                    className: "navbar-brand",
+                    href: "#"
+                }, "AF Taxi Service"), /*#__PURE__*/ _react["default"].createElement("button", {
+                    className: "navbar-toggler",
+                    type: "button",
+                    "data-bs-toggle": "collapse",
+                    "data-bs-target": "#navbarNav",
+                    "aria-controls": "navbarNav",
+                    "aria-expanded": "false",
+                    "aria-label": "Toggle navigation"
+                }, /*#__PURE__*/ _react["default"].createElement("span", {
+                    className: "navbar-toggler-icon"
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "collapse navbar-collapse",
+                    id: "navbarNav"
+                }, /*#__PURE__*/ _react["default"].createElement("ul", {
+                    className: "navbar-nav"
+                }, /*#__PURE__*/ _react["default"].createElement("li", {
+                    className: "nav-item"
+                }, /*#__PURE__*/ _react["default"].createElement("a", {
+                    className: "nav-link active",
+                    "aria-current": "page",
+                    href: "/"
+                }, "Home")), /*#__PURE__*/ _react["default"].createElement("li", {
+                    className: "nav-item"
+                }, /*#__PURE__*/ _react["default"].createElement("a", {
+                    className: "nav-link",
+                    href: "/create-vehicle"
+                }, "Create Vehicle")), /*#__PURE__*/ _react["default"].createElement("li", {
+                    className: "nav-item"
+                }, /*#__PURE__*/ _react["default"].createElement("a", {
+                    className: "nav-link",
+                    href: "/create-catogory"
+                }, "Create Category")), /*#__PURE__*/ _react["default"].createElement("li", {
+                    className: "nav-item"
+                }, /*#__PURE__*/ _react["default"].createElement("a", {
+                    className: "nav-link",
+                    href: "/vehicles"
+                }, "Vehicles")), /*#__PURE__*/ _react["default"].createElement("li", {
+                    className: "nav-item"
+                }, /*#__PURE__*/ _react["default"].createElement("a", {
+                    className: "nav-link",
+                    href: "/catagory"
+                }, "Category"))))))));
+            }
+        }
+    ]);
+    return header2;
+}(_react.Component);
+var _default = header1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"367CR":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule') return;
-        // Skip duplicate re-exports when they have the same value.
-        if (key in dest && dest[key] === source[key]) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"4Jj4f":[function(require,module,exports) {
+},{"react":"3b2NM","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4Jj4f":[function(require,module,exports) {
 "use strict";
 var Refresh = require('react-refresh/runtime');
 function debounce(func, delay) {
@@ -25355,18 +25293,145 @@ var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _reactSelect = require("react-select");
-var _reactSelectDefault = parcelHelpers.interopDefault(_reactSelect);
-class createCatogory extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+var _reactSelect = _interopRequireDefault(require("react-select"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var createCatogory1 = /*#__PURE__*/ function(_Component) {
+    _inherits(createCatogory2, _Component);
+    var _super = _createSuper(createCatogory2);
+    function createCatogory2(props) {
+        var _this;
+        _classCallCheck(this, createCatogory2);
+        _this = _super.call(this, props);
+        _this.state = {
             name: '',
             type: '',
             duration: 0,
@@ -25374,205 +25439,145 @@ class createCatogory extends _react.Component {
             options: [],
             selectedVehicles: []
         };
-        this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-        this.onSelectedVehicles = this.onSelectedVehicles.bind(this);
+        _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
+        _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
+        _this.onSelectedVehicles = _this.onSelectedVehicles.bind(_assertThisInitialized(_this));
+        return _this;
     }
-    componentDidMount() {
-        _axiosDefault.default.get('http://localhost:8080/vehicles/view').then((response)=>{
-            this.setState({
-                vehicles: response.data.data
-            }, ()=>{
-                console.log('vehicles', this.state.vehicles);
-                let data = [];
-                this.state.vehicles.map((value, index)=>{
-                    let vehicle = {
-                        value: value._id,
-                        label: value.name
-                    };
-                    data.push(vehicle);
+    _createClass(createCatogory2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                _axios["default"].get('http://localhost:8080/vehicles/view').then(function(response) {
+                    _this2.setState({
+                        vehicles: response.data.data
+                    }, function() {
+                        console.log('vehicles', _this2.state.vehicles);
+                        var data = [];
+                        _this2.state.vehicles.map(function(value, index) {
+                            var vehicle = {
+                                value: value._id,
+                                label: value.name
+                            };
+                            data.push(vehicle);
+                        });
+                        _this2.setState({
+                            options: data
+                        });
+                    });
                 });
+            }
+        },
+        {
+            key: "onChange",
+            value: function onChange(event) {
+                this.setState(_defineProperty({
+                }, event.target.name, event.target.value));
+            }
+        },
+        {
+            key: "onSelectedVehicles",
+            value: function onSelectedVehicles(event) {
                 this.setState({
-                    options: data
+                    selectedVehicles: event ? event.map(function(vehicle) {
+                        return vehicle.value;
+                    }) : []
                 });
-            });
-        });
-    }
-    onChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    }
-    onSelectedVehicles(event) {
-        this.setState({
-            selectedVehicles: event ? event.map((vehicle)=>vehicle.value
-            ) : []
-        });
-    }
-    onSubmit(event) {
-        event.preventDefault();
-        let category = {
-            name: this.state.name,
-            type: this.state.type,
-            duration: this.state.duration,
-            vehicles: this.state.selectedVehicles
-        };
-        console.log(category);
-        _axiosDefault.default.post('http://localhost:8080/categories/add', category).then((response)=>{
-            alert('Data successfully added');
-        }).catch((error)=>{
-            console.log('error', error.message);
-        });
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 66
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 67
-            },
-            __self: this
-        }, "Create Catogory"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            onSubmit: this.onSubmit,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 68
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 69
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            hfor: "name",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 70
-            },
-            __self: this
-        }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            className: "form-control",
-            id: "name",
-            name: "name",
-            placeholder: "Name",
-            value: this.state.name,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 71
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 74
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "type",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 75
-            },
-            __self: this
-        }, "Type"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "type",
-            className: "form-control",
-            id: "type",
-            name: "type",
-            placeholder: "type",
-            value: this.state.type,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 76
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 79
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "duration",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 80
-            },
-            __self: this
-        }, "Duration"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "duration",
-            className: "form-control",
-            id: "duration",
-            name: "duration",
-            placeholder: "duration",
-            value: this.state.duration,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 81
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 84
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "type",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 85
-            },
-            __self: this
-        }, "Vehicles"), /*#__PURE__*/ _reactDefault.default.createElement(_reactSelectDefault.default, {
-            onChange: this.onSelectedVehicles,
-            options: this.state.options,
-            className: "basic-multi-select",
-            isMulti: true,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 86
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            className: "btn btn-primary",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createCatogory.js",
-                lineNumber: 93
-            },
-            __self: this
-        }, "Submit"))));
-    }
-}
-exports.default = createCatogory;
+            }
+        },
+        {
+            key: "onSubmit",
+            value: function onSubmit(event) {
+                event.preventDefault();
+                var category = {
+                    name: this.state.name,
+                    type: this.state.type,
+                    duration: this.state.duration,
+                    vehicles: this.state.selectedVehicles
+                };
+                console.log(category);
+                _axios["default"].post('http://localhost:8080/categories/add', category).then(function(response) {
+                    alert('Data successfully added');
+                })["catch"](function(error) {
+                    console.log('error', error.message);
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("h3", null, "Create Catogory"), /*#__PURE__*/ _react["default"].createElement("form", {
+                    onSubmit: this.onSubmit
+                }, /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    hfor: "name",
+                    className: "form-label"
+                }, "Name"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "text",
+                    className: "form-control",
+                    id: "name",
+                    name: "name",
+                    placeholder: "Name",
+                    value: this.state.name,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Type"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "type",
+                    className: "form-control",
+                    id: "type",
+                    name: "type",
+                    placeholder: "type",
+                    value: this.state.type,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "duration",
+                    className: "form-label"
+                }, "Duration"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "duration",
+                    className: "form-control",
+                    id: "duration",
+                    name: "duration",
+                    placeholder: "duration",
+                    value: this.state.duration,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Vehicles"), /*#__PURE__*/ _react["default"].createElement(_reactSelect["default"], {
+                    onChange: this.onSelectedVehicles,
+                    options: this.state.options,
+                    className: "basic-multi-select",
+                    isMulti: true
+                })), /*#__PURE__*/ _react["default"].createElement("button", {
+                    type: "submit",
+                    className: "btn btn-primary"
+                }, "Submit"))));
+            }
+        }
+    ]);
+    return createCatogory2;
+}(_react.Component);
+var _default = createCatogory1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","react-select":"7d3cD"}],"7rA65":[function(require,module,exports) {
+},{"react":"3b2NM","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","react-select":"7d3cD"}],"7rA65":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
@@ -32834,18 +32839,145 @@ var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _reactSelect = require("react-select");
-var _reactSelectDefault = parcelHelpers.interopDefault(_reactSelect);
-class createVehicle extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+var _reactSelect = _interopRequireDefault(require("react-select"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var createVehicle1 = /*#__PURE__*/ function(_Component) {
+    _inherits(createVehicle2, _Component);
+    var _super = _createSuper(createVehicle2);
+    function createVehicle2(props) {
+        var _this;
+        _classCallCheck(this, createVehicle2);
+        _this = _super.call(this, props);
+        _this.state = {
             name: '',
             code: '',
             model: '',
@@ -32854,684 +32986,1234 @@ class createVehicle extends _react.Component {
             options: [],
             selectedCategoies: []
         };
-        this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-        this.onSelectedCategory = this.onSelectedCategory.bind(this);
+        _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
+        _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
+        _this.onSelectedCategory = _this.onSelectedCategory.bind(_assertThisInitialized(_this));
+        return _this;
     }
-    componentDidMount() {
-        _axiosDefault.default.get('http://localhost:8080/categories/view').then((response)=>{
-            this.setState({
-                categories: response.data.data
-            }, ()=>{
-                console.log('categories', this.state.categories); //print category details in componentDidMount
-                let data = [];
-                this.state.categories.map((value, index)=>{
-                    //to select multi categories
-                    let category = {
-                        value: value._id,
-                        label: value.name
-                    };
-                    data.push(category);
+    _createClass(createVehicle2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                _axios["default"].get('http://localhost:8080/categories/view').then(function(response) {
+                    _this2.setState({
+                        categories: response.data.data
+                    }, function() {
+                        console.log('categories', _this2.state.categories); //print category details in componentDidMount
+                        var data = [];
+                        _this2.state.categories.map(function(value, index) {
+                            //convert format to value label for react selet 
+                            //to select multi categories
+                            var category = {
+                                value: value._id,
+                                label: value.name
+                            };
+                            data.push(category);
+                        });
+                        _this2.setState({
+                            options: data
+                        });
+                        console.log('options', _this2.state.options);
+                    });
                 });
+            }
+        },
+        {
+            key: "onChange",
+            value: function onChange(event) {
+                this.setState(_defineProperty({
+                }, event.target.name, event.target.value));
+            }
+        },
+        {
+            key: "onSelectedCategory",
+            value: function onSelectedCategory(event) {
                 this.setState({
-                    options: data
+                    selectedCategoies: event ? event.map(function(category) {
+                        return category.value;
+                    }) : []
                 });
-                console.log('options', this.state.options);
-            });
-        });
-    }
-    onChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    }
-    onSelectedCategory(event) {
-        this.setState({
-            selectedCategoies: event ? event.map((category)=>category.value
-            ) : []
-        });
-    }
-    onSubmit(event) {
-        //event.preventDefault();
-        let vehicle = {
-            name: this.state.name,
-            code: this.state.code,
-            model: this.state.model,
-            type: this.state.type
-        };
-        console.log(vehicle);
-        _axiosDefault.default.post('http://localhost:8080/vehicles/add', vehicle).then((response)=>{
-            alert('Data successfully added');
-        }).catch((error)=>{
-            console.log('error', error.message);
-        });
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 67
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 68
-            },
-            __self: this
-        }, "Create Vehicle"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            onSubmit: this.onSubmit,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 69
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 70
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            hfor: "name",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 71
-            },
-            __self: this
-        }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            className: "form-control",
-            id: "name",
-            name: "name",
-            placeholder: "Name",
-            value: this.state.name,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 72
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 74
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "code",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 75
-            },
-            __self: this
-        }, "Code"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "code",
-            className: "form-control",
-            id: "code",
-            name: "code",
-            placeholder: "Code",
-            value: this.state.code,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 76
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 78
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "model",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 79
-            },
-            __self: this
-        }, "Model"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "model",
-            className: "form-control",
-            id: "model",
-            name: "model",
-            placeholder: "Model",
-            value: this.state.model,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 80
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 82
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "type",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 83
-            },
-            __self: this
-        }, "Type"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "type",
-            className: "form-control",
-            id: "type",
-            name: "type",
-            placeholder: "Type",
-            value: this.state.type,
-            onChange: this.onChange,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 84
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 86
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "type",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 87
-            },
-            __self: this
-        }, "Categories"), /*#__PURE__*/ _reactDefault.default.createElement(_reactSelectDefault.default, {
-            onChange: this.onSelectedCategory,
-            options: this.state.options,
-            className: "basic-multi-select",
-            isMulti: true,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 88
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            className: "btn btn-primary",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\createVehicle.js",
-                lineNumber: 95
-            },
-            __self: this
-        }, "Submit"))));
-    }
-}
-exports.default = createVehicle;
+            }
+        },
+        {
+            key: "onSubmit",
+            value: function onSubmit(event) {
+                event.preventDefault();
+                var vehicle = {
+                    name: this.state.name,
+                    code: this.state.code,
+                    model: this.state.model,
+                    type: this.state.type
+                };
+                console.log(vehicle);
+                _axios["default"].post('http://localhost:8080/vehicles/add', vehicle).then(function(response) {
+                    alert('Data successfully added');
+                })["catch"](function(error) {
+                    console.log('error', error.message);
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("h3", null, "Create Vehicle"), /*#__PURE__*/ _react["default"].createElement("form", {
+                    onSubmit: this.onSubmit
+                }, /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    hfor: "name",
+                    className: "form-label"
+                }, "Name"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "text",
+                    className: "form-control",
+                    id: "name",
+                    name: "name",
+                    placeholder: "Name",
+                    value: this.state.name,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "code",
+                    className: "form-label"
+                }, "Code"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "code",
+                    className: "form-control",
+                    id: "code",
+                    name: "code",
+                    placeholder: "Code",
+                    value: this.state.code,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "model",
+                    className: "form-label"
+                }, "Model"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "model",
+                    className: "form-control",
+                    id: "model",
+                    name: "model",
+                    placeholder: "Model",
+                    value: this.state.model,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Type"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "type",
+                    className: "form-control",
+                    id: "type",
+                    name: "type",
+                    placeholder: "Type",
+                    value: this.state.type,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Categories"), /*#__PURE__*/ _react["default"].createElement(_reactSelect["default"], {
+                    onChange: this.onSelectedCategory,
+                    options: this.state.options,
+                    className: "basic-multi-select",
+                    isMulti: true
+                })), /*#__PURE__*/ _react["default"].createElement("button", {
+                    type: "submit",
+                    className: "btn btn-primary"
+                }, "Submit"))));
+            }
+        }
+    ]);
+    return createVehicle2;
+}(_react.Component);
+var _default = createVehicle1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","react-select":"7d3cD"}],"2oeTh":[function(require,module,exports) {
+},{"react":"3b2NM","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","react-select":"7d3cD"}],"2oeTh":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-class ViewVehicles extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var ViewVehicles1 = /*#__PURE__*/ function(_Component) {
+    _inherits(ViewVehicles2, _Component);
+    var _super = _createSuper(ViewVehicles2);
+    function ViewVehicles2(props) {
+        var _this;
+        _classCallCheck(this, ViewVehicles2);
+        _this = _super.call(this, props);
+        _this.state = {
             vehicles: []
         };
+        return _this;
     }
-    componentDidMount() {
-        _axiosDefault.default.get('http://localhost:8080/vehicles/view').then((response)=>{
-            console.log(response.data.data);
-            this.setState({
-                vehicles: response.data.data
-            });
-        }).catch((err)=>{
-            alert(err.message);
-        });
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                lineNumber: 23
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("center", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                lineNumber: 24
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                lineNumber: 24
-            },
-            __self: this
-        }, "Vehicles")), this.state.vehicles.length > 0 && this.state.vehicles.map((value, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
-                key: index,
-                className: "card mb-3",
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                    lineNumber: 26
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                className: "p-3",
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                    lineNumber: 27
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                    lineNumber: 28
-                },
-                __self: this
-            }, "Name :", value.name), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                    lineNumber: 29
-                },
-                __self: this
-            }, "Code :", value.code), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                    lineNumber: 30
-                },
-                __self: this
-            }, "Model :", value.model), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewVehicles.js",
-                    lineNumber: 31
-                },
-                __self: this
-            }, "Type :", value.type)))
-        )));
-    }
-}
-exports.default = ViewVehicles;
+    _createClass(ViewVehicles2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                _axios["default"].get('http://localhost:8080/vehicles/view').then(function(response) {
+                    console.log(response.data.data);
+                    _this2.setState({
+                        vehicles: response.data.data
+                    });
+                })["catch"](function(err) {
+                    alert(err.message);
+                });
+            }
+        },
+        {
+            key: "navigateUpdate",
+            value: function navigateUpdate(event, id) {
+                event.preventDefault();
+                window.location = "/vehicle/navigateUpdate/".concat(id);
+            }
+        },
+        {
+            key: "navigateDelete",
+            value: function navigateDelete(event, id) {
+                _axios["default"]["delete"]("http://localhost:8080/vehicles/deleteById/".concat(id)).then(function(response) {
+                    alert("Data deleted successfully");
+                    window.location = "/vehicles";
+                })["catch"](function(error) {
+                    console.log(error);
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this3 = this;
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("center", null, /*#__PURE__*/ _react["default"].createElement("h3", null, "Vehicles")), this.state.vehicles.length > 0 && this.state.vehicles.map(function(value, index) {
+                    return(/*#__PURE__*/ _react["default"].createElement("div", {
+                        key: index,
+                        className: "card mb-3"
+                    }, /*#__PURE__*/ _react["default"].createElement("div", {
+                        className: "p-3"
+                    }, /*#__PURE__*/ _react["default"].createElement("h5", null, "Name :", value.name), /*#__PURE__*/ _react["default"].createElement("h5", null, "Code :", value.code), /*#__PURE__*/ _react["default"].createElement("h5", null, "Model :", value.model), /*#__PURE__*/ _react["default"].createElement("h5", null, "Type :", value.type), /*#__PURE__*/ _react["default"].createElement("button", {
+                        className: "btn btn-warning",
+                        onClick: function onClick(event) {
+                            return _this3.navigateUpdate(event, value._id);
+                        }
+                    }, "Update Vehicle"), /*#__PURE__*/ _react["default"].createElement("button", {
+                        className: "btn btn-danger",
+                        onClick: function onClick(event) {
+                            return _this3.navigateDelete(event, value._id);
+                        }
+                    }, "Delete Vehicle"))));
+                })));
+            }
+        }
+    ]);
+    return ViewVehicles2;
+}(_react.Component);
+var _default = ViewVehicles1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"4ugNY":[function(require,module,exports) {
+},{"react":"3b2NM","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"4ugNY":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-class ViewCatogory extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var ViewCatogory1 = /*#__PURE__*/ function(_Component) {
+    _inherits(ViewCatogory2, _Component);
+    var _super = _createSuper(ViewCatogory2);
+    function ViewCatogory2(props) {
+        var _this;
+        _classCallCheck(this, ViewCatogory2);
+        _this = _super.call(this, props);
+        _this.state = {
             categories: []
         };
-        this.onClickNavCatogory = this.onClickNavCatogory.bind(this);
+        _this.onClickNavCatogory = _this.onClickNavCatogory.bind(_assertThisInitialized(_this));
+        return _this;
     }
-    componentDidMount() {
-        _axiosDefault.default.get('http://localhost:8080/categories/view').then((response)=>{
-            console.log('catogory', this.state.categories);
-            this.setState({
-                categories: response.data.data
-            });
-        });
-    }
-    onClickNavCatogory(event, id) {
-        window.location = `/incatagory/${id}`;
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                lineNumber: 24
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("center", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                lineNumber: 25
-            },
-            __self: this
-        }, " ", /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                lineNumber: 25
-            },
-            __self: this
-        }, "Catogory")), this.state.categories.length > 0 && this.state.categories.map((value, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
-                key: index,
-                className: "card mb-3",
-                onClick: (event)=>this.onClickNavCatogory(event, value._id)
-                ,
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                    lineNumber: 27
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                className: "p-3",
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                    lineNumber: 28
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                    lineNumber: 29
-                },
-                __self: this
-            }, "CatogoryName: ", value.name), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\ViewCatogory.js",
-                    lineNumber: 30
-                },
-                __self: this
-            }, "Duration : ", value.duration)))
-        )));
-    }
-}
-exports.default = ViewCatogory;
+    _createClass(ViewCatogory2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                _axios["default"].get('http://localhost:8080/categories/view').then(function(response) {
+                    console.log('catogory', _this2.state.categories);
+                    _this2.setState({
+                        categories: response.data.data
+                    });
+                });
+            }
+        },
+        {
+            key: "onClickNavCatogory",
+            value: function onClickNavCatogory(event, id) {
+                event.preventDefault();
+                window.location = "/incatagory/".concat(id);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this3 = this;
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("center", null, " ", /*#__PURE__*/ _react["default"].createElement("h3", null, "Catogory")), this.state.categories.length > 0 && this.state.categories.map(function(value, index) {
+                    return(/*#__PURE__*/ _react["default"].createElement("div", {
+                        key: index,
+                        className: "card mb-3",
+                        onClick: function onClick(event) {
+                            return _this3.onClickNavCatogory(event, value._id);
+                        }
+                    }, /*#__PURE__*/ _react["default"].createElement("div", {
+                        className: "p-3"
+                    }, /*#__PURE__*/ _react["default"].createElement("h5", null, "CatogoryName: ", value.name), /*#__PURE__*/ _react["default"].createElement("h5", null, "Duration    : ", value.duration))));
+                })));
+            }
+        }
+    ]);
+    return ViewCatogory2;
+}(_react.Component);
+var _default = ViewCatogory1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"4baxH":[function(require,module,exports) {
+},{"react":"3b2NM","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"4baxH":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-class viewVehiclesInfo extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var viewVehiclesInfo1 = /*#__PURE__*/ function(_Component) {
+    _inherits(viewVehiclesInfo2, _Component);
+    var _super = _createSuper(viewVehiclesInfo2);
+    function viewVehiclesInfo2(props) {
+        var _this;
+        _classCallCheck(this, viewVehiclesInfo2);
+        _this = _super.call(this, props);
+        _this.state = {
             vehicles: []
         };
+        return _this;
     }
-    componentDidMount() {
-        console.log(this.props.match.params.id);
-        let id = this.props.match.params.id;
-        _axiosDefault.default.get(`http://localhost:8080/categories/getVehicalsfromId/${id}`).then((response)=>{
-            console.log(response.data.data);
-            this.setState({
-                vehicles: response.data.data
-            });
-        }).catch((error)=>{
-            alert(error.message);
-        });
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                lineNumber: 27
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("center", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                lineNumber: 28
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                lineNumber: 28
-            },
-            __self: this
-        }, "Vehicle Informations")), this.state.vehicles.length > 0 && this.state.vehicles.map((value, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
-                key: index,
-                className: "card mb-3",
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                    lineNumber: 30
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                className: "p-3",
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                    lineNumber: 31
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                    lineNumber: 32
-                },
-                __self: this
-            }, "Name : ", value.name), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                    lineNumber: 33
-                },
-                __self: this
-            }, "Code : ", value.code), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                    lineNumber: 34
-                },
-                __self: this
-            }, "Model :", value.model), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\viewVehiclesInfo.js",
-                    lineNumber: 35
-                },
-                __self: this
-            }, "Type :", value.type)))
-        )));
-    }
-}
-exports.default = viewVehiclesInfo;
+    _createClass(viewVehiclesInfo2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                console.log(this.props.match.params.id);
+                var id = this.props.match.params.id;
+                _axios["default"].get("http://localhost:8080/categories/getVehicalsfromId/".concat(id)).then(function(response) {
+                    console.log(response.data.data);
+                    _this2.setState({
+                        vehicles: response.data.data
+                    });
+                })["catch"](function(error) {
+                    alert(error.message);
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("center", null, /*#__PURE__*/ _react["default"].createElement("h3", null, "Vehicle Informations")), this.state.vehicles.length > 0 && this.state.vehicles.map(function(value, index) {
+                    return(/*#__PURE__*/ _react["default"].createElement("div", {
+                        key: index,
+                        className: "card mb-3"
+                    }, /*#__PURE__*/ _react["default"].createElement("div", {
+                        className: "p-3"
+                    }, /*#__PURE__*/ _react["default"].createElement("h5", null, "Name : ", value.name), /*#__PURE__*/ _react["default"].createElement("h5", null, "Code : ", value.code), /*#__PURE__*/ _react["default"].createElement("h5", null, "Model :", value.model), /*#__PURE__*/ _react["default"].createElement("h5", null, "Type :", value.type))));
+                })));
+            }
+        }
+    ]);
+    return viewVehiclesInfo2;
+}(_react.Component);
+var _default = viewVehiclesInfo1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"6FJzx":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6FJzx":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class calcTripCharge extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var calcTripCharge1 = /*#__PURE__*/ function(_Component) {
+    _inherits(calcTripCharge2, _Component);
+    var _super = _createSuper(calcTripCharge2);
+    function calcTripCharge2(props) {
+        var _this;
+        _classCallCheck(this, calcTripCharge2);
+        _this = _super.call(this, props);
+        _this.state = {
             duration: '',
             total: ''
         };
-        this.onChange = this.onChange.bind(this);
-        this.calculateTripCharge = this.calculateTripCharge.bind(this);
+        _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
+        _this.calculateTripCharge = _this.calculateTripCharge.bind(_assertThisInitialized(_this));
+        return _this;
     }
-    onChange(event) {
-        this.setState({
-            duration: event.target.value
-        });
-    }
-    calculateTripCharge(event) {
-        event.preventDefault();
-        console.log(this.state.duration);
-        let amount = this.state.duration;
-        let total = amount * 10;
-        this.setState({
-            total: total
-        });
-        console.log(this.state.total);
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 27
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 28
-            },
-            __self: this
-        }, "Calculate the trip charges"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 29
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 30
-            },
-            __self: this
-        }, this.state.total), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 31
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            hfor: "name",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 32
-            },
-            __self: this
-        }, "Vehicle"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            className: "form-control",
-            placeholder: "vehicle",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 33
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 35
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "type",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 36
-            },
-            __self: this
-        }, "Trip type"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "type",
-            className: "form-control",
-            placeholder: "type",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 37
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "mb-3",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 39
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "duration",
-            className: "form-label",
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 40
-            },
-            __self: this
-        }, "Duration"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "duration",
-            className: "form-control",
-            name: "duration",
-            placeholder: "duration",
-            onChange: this.onChange,
-            value: this.state.duration,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 41
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            className: "btn btn-primary",
-            onClick: this.calculateTripCharge,
-            __source: {
-                fileName: "C:\\Users\\Lenovo\\Desktop\\Af Practise Paper\\af-practise-front\\components\\calcTripCharge.js",
-                lineNumber: 43
-            },
-            __self: this
-        }, "Submit"))));
-    }
-}
-exports.default = calcTripCharge;
+    _createClass(calcTripCharge2, [
+        {
+            key: "onChange",
+            value: function onChange(event) {
+                this.setState({
+                    duration: event.target.value
+                });
+            }
+        },
+        {
+            key: "calculateTripCharge",
+            value: function calculateTripCharge(event) {
+                event.preventDefault();
+                console.log(this.state.duration);
+                var amount = this.state.duration;
+                var total = amount * 10;
+                this.setState({
+                    total: total
+                });
+                console.log(this.state.total);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("h3", null, "Calculate the trip charges"), /*#__PURE__*/ _react["default"].createElement("form", null, /*#__PURE__*/ _react["default"].createElement("h5", null, this.state.total), /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    hfor: "name",
+                    className: "form-label"
+                }, "Vehicle"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "text",
+                    className: "form-control",
+                    placeholder: "vehicle"
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Trip type"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "type",
+                    className: "form-control",
+                    placeholder: "type"
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "duration",
+                    className: "form-label"
+                }, "Duration"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "duration",
+                    className: "form-control",
+                    name: "duration",
+                    placeholder: "duration",
+                    onChange: this.onChange,
+                    value: this.state.duration
+                })), /*#__PURE__*/ _react["default"].createElement("button", {
+                    type: "submit",
+                    className: "btn btn-primary",
+                    onClick: this.calculateTripCharge
+                }, "Submit"))));
+            }
+        }
+    ]);
+    return calcTripCharge2;
+}(_react.Component);
+var _default = calcTripCharge1;
+exports["default"] = _default;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","oOezg","4ee1I"], "4ee1I", "parcelRequireddc1")
+},{"react":"3b2NM","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5FmFR":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var updateVehicle1 = /*#__PURE__*/ function(_Component) {
+    _inherits(updateVehicle2, _Component);
+    var _super = _createSuper(updateVehicle2);
+    function updateVehicle2(props) {
+        var _this;
+        _classCallCheck(this, updateVehicle2);
+        _this = _super.call(this, props);
+        _this.state = {
+            name: '',
+            code: '',
+            model: '',
+            type: ''
+        };
+        _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
+        _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
+        return _this;
+    }
+    _createClass(updateVehicle2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                var pid = this.props.match.params.id;
+                _axios["default"].get("http://localhost:8080/vehicles/getVehicleById/".concat(pid)).then(function(response) {
+                    _this2.setState({
+                        name: response.data.data.name
+                    });
+                    _this2.setState({
+                        code: response.data.data.code
+                    });
+                    _this2.setState({
+                        model: response.data.data.model
+                    });
+                    _this2.setState({
+                        type: response.data.data.type
+                    });
+                    console.log(_this2.state.name);
+                })["catch"](function(error) {
+                    console.error(error.message);
+                });
+            }
+        },
+        {
+            key: "onChange",
+            value: function onChange(event) {
+                this.setState(_defineProperty({
+                }, event.target.name, event.target.value));
+            }
+        },
+        {
+            key: "onSubmit",
+            value: function onSubmit(event) {
+                event.preventDefault();
+                var vehicle = {
+                    name: this.state.name,
+                    code: this.state.code,
+                    model: this.state.model,
+                    type: this.state.type
+                };
+                var pid = this.props.match.params.id;
+                console.log(vehicle);
+                _axios["default"].put("http://localhost:8080/vehicles/updateById/".concat(pid), vehicle).then(function(response) {
+                    console.log("dfgfgf", response.data);
+                    alert("Data Sucessfully updated");
+                })["catch"](function(error) {
+                    console.log('error', error.message);
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("h3", null, "Update Vehicle"), /*#__PURE__*/ _react["default"].createElement("form", {
+                    onSubmit: this.onSubmit
+                }, /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    hfor: "name",
+                    className: "form-label"
+                }, "Name"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "text",
+                    className: "form-control",
+                    id: "name",
+                    name: "name",
+                    placeholder: "Name",
+                    value: this.state.name,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "code",
+                    className: "form-label"
+                }, "Code"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "code",
+                    className: "form-control",
+                    id: "code",
+                    name: "code",
+                    placeholder: "Code",
+                    value: this.state.code,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "model",
+                    className: "form-label"
+                }, "Model"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "model",
+                    className: "form-control",
+                    id: "model",
+                    name: "model",
+                    placeholder: "Model",
+                    value: this.state.model,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Type"), /*#__PURE__*/ _react["default"].createElement("input", {
+                    type: "type",
+                    className: "form-control",
+                    id: "type",
+                    name: "type",
+                    placeholder: "Type",
+                    value: this.state.type,
+                    onChange: this.onChange
+                })), /*#__PURE__*/ _react["default"].createElement("button", {
+                    type: "submit",
+                    className: "btn btn-primary"
+                }, "Submit"))));
+            }
+        }
+    ]);
+    return updateVehicle2;
+}(_react.Component);
+var _default = updateVehicle1;
+exports["default"] = _default;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","oOezg","4ee1I"], "4ee1I", "parcelRequireddc1")
 
 //# sourceMappingURL=index.fd532818.js.map
