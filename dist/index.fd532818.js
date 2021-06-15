@@ -21852,6 +21852,7 @@ var _ViewCatogory = _interopRequireDefault(require("./components/ViewCatogory"))
 var _viewVehiclesInfo = _interopRequireDefault(require("./components/viewVehiclesInfo"));
 var _calcTripCharge = _interopRequireDefault(require("./components/calcTripCharge"));
 var _updateVehicle = _interopRequireDefault(require("./components/updateVehicle"));
+var _calcDuration = _interopRequireDefault(require("./components/calcDuration"));
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         "default": obj
@@ -21880,6 +21881,9 @@ var App = function App1() {
     }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
         path: "/vehicle/navigateUpdate/:id",
         component: _updateVehicle["default"]
+    }), /*#__PURE__*/ _react["default"].createElement(_reactRouterDom.Route, {
+        path: "/calcDuration",
+        component: _calcDuration["default"]
     }))))));
 };
 _c = App;
@@ -21893,7 +21897,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/header":"72GXj","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/createCatogory":"4DeDK","./components/createVehicle":"1V43u","./components/ViewVehicles":"2oeTh","./components/ViewCatogory":"4ugNY","./components/viewVehiclesInfo":"4baxH","./components/calcTripCharge":"6FJzx","./components/updateVehicle":"5FmFR"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/header":"72GXj","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/createCatogory":"4DeDK","./components/createVehicle":"1V43u","./components/ViewVehicles":"2oeTh","./components/ViewCatogory":"4ugNY","./components/viewVehiclesInfo":"4baxH","./components/calcTripCharge":"6FJzx","./components/updateVehicle":"5FmFR","./components/calcDuration":"2eXoi"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25466,6 +25470,8 @@ var createCatogory1 = /*#__PURE__*/ function(_Component) {
                             options: data
                         });
                     });
+                })["catch"](function(err) {
+                    console.log("Error", err.message);
                 });
             }
         },
@@ -34214,6 +34220,245 @@ exports["default"] = _default;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","oOezg","4ee1I"], "4ee1I", "parcelRequireddc1")
+},{"react":"3b2NM","axios":"7rA65","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2eXoi":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+"use strict";
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof1(obj1) {
+        return typeof obj1;
+    };
+    else _typeof = function _typeof2(obj1) {
+        return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _axios = _interopRequireDefault(require("axios"));
+var _reactSelect = _interopRequireDefault(require("react-select"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf1(o1, p1) {
+        o1.__proto__ = p1;
+        return o1;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+        }));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf1(o1) {
+        return o1.__proto__ || Object.getPrototypeOf(o1);
+    };
+    return _getPrototypeOf(o);
+}
+var calcDuration1 = /*#__PURE__*/ function(_Component) {
+    _inherits(calcDuration2, _Component);
+    var _super = _createSuper(calcDuration2);
+    function calcDuration2(props) {
+        var _this;
+        _classCallCheck(this, calcDuration2);
+        _this = _super.call(this, props);
+        _this.state = {
+            categories: [],
+            options: [],
+            selectedCategoies: [],
+            total: 0
+        };
+        _this.onSelectedCategory = _this.onSelectedCategory.bind(_assertThisInitialized(_this));
+        _this.onCalculate = _this.onCalculate.bind(_assertThisInitialized(_this));
+        return _this;
+    }
+    _createClass(calcDuration2, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this2 = this;
+                _axios["default"].get('http://localhost:8080/categories/view').then(function(response) {
+                    _this2.setState({
+                        categories: response.data.data
+                    }, function() {
+                        console.log(_this2.state.categories);
+                        var data = [];
+                        _this2.state.categories.map(function(value, index) {
+                            var category = {
+                                value: value._id,
+                                label: value.name,
+                                duration: value.duration
+                            };
+                            data.push(category);
+                            console.log(data);
+                        });
+                        _this2.setState({
+                            options: data
+                        });
+                    });
+                })["catch"](function(error) {
+                    console.log(error.message);
+                });
+            }
+        },
+        {
+            key: "onSelectedCategory",
+            value: function onSelectedCategory(event) {
+                this.setState({
+                    selectedCategoies: event ? event.map(function(category) {
+                        return category.value;
+                    }) : []
+                });
+                console.log("selected category :", this.state.selectedCategoies);
+            }
+        },
+        {
+            key: "onCalculate",
+            value: function onCalculate(event) {
+                var _this3 = this;
+                event.preventDefault();
+                console.log(this.state.selectedCategoies);
+                this.state.selectedCategoies.map(function(id) {
+                    var totalduration = 0;
+                    console.log(id);
+                    _axios["default"].get("http://localhost:8080/categories/getDuration/".concat(id)).then(function(response) {
+                        totalduration = response.data.data + totalduration;
+                        _this3.setState({
+                            total: totalduration
+                        });
+                        console.log(_this3.state.total);
+                    });
+                });
+                alert(this.state.total);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                return(/*#__PURE__*/ _react["default"].createElement("div", {
+                    className: "container"
+                }, /*#__PURE__*/ _react["default"].createElement("h3", null, "Calculate Duration"), /*#__PURE__*/ _react["default"].createElement("form", {
+                    onSubmit: this.onCalculate
+                }, /*#__PURE__*/ _react["default"].createElement("div", {
+                    "class": "mb-3"
+                }, /*#__PURE__*/ _react["default"].createElement("label", {
+                    "for": "type",
+                    className: "form-label"
+                }, "Categories"), /*#__PURE__*/ _react["default"].createElement(_reactSelect["default"], {
+                    onChange: this.onSelectedCategory,
+                    options: this.state.options,
+                    className: "basic-multi-select",
+                    isMulti: true
+                })), /*#__PURE__*/ _react["default"].createElement("button", {
+                    type: "submit",
+                    className: "btn btn-primary"
+                }, "Submit"))));
+            }
+        }
+    ]);
+    return calcDuration2;
+}(_react.Component);
+var _default = calcDuration1;
+exports["default"] = _default;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-select":"7d3cD"}]},["1j6wU","oOezg","4ee1I"], "4ee1I", "parcelRequireddc1")
 
 //# sourceMappingURL=index.fd532818.js.map

@@ -33,6 +33,8 @@ class createCatogory extends Component {
                 })
                 this.setState({options :data})
             });
+        }).catch(err =>{
+            console.log("Error",err.message)
         })
     }
 
