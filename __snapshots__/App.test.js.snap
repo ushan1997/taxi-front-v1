@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Insert vehicles in db 1`] = `<create-vehicle />`;
+
 exports[`view vehicles in db 1`] = `<vehicles />`;
